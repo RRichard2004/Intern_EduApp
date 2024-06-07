@@ -1,0 +1,31 @@
+/*Int the menu and endpoints makes the white cubes*/
+.backgroundcubes {
+  position: relative;
+  color: black;
+  width: 131px;
+  height: 125px;
+  background-color: #D8F9FF;
+  border-radius: 1.3125rem;
+  font-family: 'Lalezar', cursive;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px 10px ;
+}
+/*
+modifier for the first cube on the top
+*/
+.backgroundcubesfirst{
+  width: 128px;
+  height: 122px;
+}
+/*Makes the text appear where they should be*/
+.selectortextoffset {
+    position: absolute;
+    top: -0.6em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 32px;
+    font-family: 'Lalezar', cursive;
+    line-height: 32px;
+  }

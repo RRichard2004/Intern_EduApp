@@ -1,0 +1,207 @@
+/*main, changes background*/
+ion-content {
+  --background: transparent;
+  --ion-background-color: transparent;
+  background-image: url('../public/backgroundimage.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Lalezar', cursive;
+}
+
+/*
+language selector
+home
+menu
+Just centers the elements inside of it, and makes sure it fits on the display
+*/
+.centeringelementsdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+}
+
+.bigbutton {
+  
+  flex-shrink: 0;
+  border-radius: 2.8125rem;
+  background: #FFFAFA;
+  color: #2F2E41;
+  text-align: center;
+  font-family: Lalezar;
+  font-size: 3rem;
+  box-sizing: 70px;
+  height: 70px;
+  max-height: 70px;
+  min-height: 70px;
+  overflow: hidden;
+
+
+
+}
+
+
+/*
+It makes a margin in the language selector menu
+*/
+.languageselectorbutton {
+  margin: 3.125rem;
+}
+
+/*
+Its a standard home button which imports the icon in
+Its in all the pages apart from the language menu
+
+needs repair on the menu if the page size is smaller than ???
+*/
+.custombackbutton {
+  --background: transparent;
+  --ion-background-color: transparent;
+  background-image: url('../public/Vectorhomebutton.svg');
+  justify-self: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: fill;
+  bottom: 0;
+  width: 4.375rem;
+  overflow: hidden;
+  margin-top: 5%;
+
+}
+
+/*
+Makes modifier to the home button
+*/
+.custombackbuttonhome{
+  margin-top: 10%;
+  height: 40px;
+}
+
+/*
+Modifier to the home button on the last pages
+*/
+.custombackbuttonpages{
+  position: fixed;
+  bottom: 20px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  
+
+}
+
+/*
+unused, was used for the overflowing home button
+*/
+.homebuttondiv{
+  max-height: 100vh;
+
+}
+
+/*unused*/
+.customhomepagegrid {
+  justify-self: center;
+  /**/
+}
+
+/*it contains the picture on the home/welcome page*/
+.homepics {
+  max-width: 18.75rem;
+  text-align: center;
+}
+
+/*unused, was used for the menu, and endpoints*/
+.selectorpics {
+  position: absolute;
+}
+
+/*
+On the endpoints used for the current placeholders
+*/
+.list-item {
+  border: none;
+  box-shadow: none;
+  border-radius: 1.5625rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+}
+
+/*In the welcome for the bottom images*/
+.footerimg {
+  position: relative;
+  object-fit: contain;
+  width: 100%;
+  height: 37px;
+}
+
+/*
+It contains the menu buttons
+*/
+.button-container {
+  position: relative;
+  margin: 9px;
+  border-radius: 1.3125rem;
+}
+
+/*Home/welcome contains the picture above the logo*/
+.centering-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+
+/*Home page make the picture standard size*/
+.homepics {
+  text-align: center;
+  margin-top: 30; /* Default margin-top */
+
+  @media (max-width: 700) {
+    max-width: 80%;
+    margin-top: 10%;
+  }
+}
+
+/*On the home/welcome menu manipulates the text size, they are used for specific language*/
+.sizemanipulate32{
+  font-size: 32px;
+  color: #E6E6E6;
+}
+@media (max-width: 420px) {
+  .sizemanipulate32 {
+    font-size: 28px;
+  }
+}
+.sizemanipulate36{
+  font-size: 36px;
+  color: #FFF9F9;
+  margin-top: -25px;
+}
+.sizemanupulate64{
+  font-size: 64px;
+  color: #E6E6E6;
+}
+
+/*on the endpoints contains the picture*/
+.documents-grid{
+  height: 30vh;
+  
+}
+
+/*Helps containing the pics in the home menu*/
+.gridfooterparent{
+  position: absolute;
+
+  width: 95%;
+  bottom: 10px;
+  overflow: hidden;
+}
+
