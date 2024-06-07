@@ -1,0 +1,7 @@
+{
+  "name": "eduappdev",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
